@@ -48,8 +48,9 @@
   margin: 0;
   margin-bottom: 5px;
 }
-
-
+.Navbar__TopRightLabel h6:last-child {
+  padding-left: 85px;
+}
 
 .Display__Button {
   display: flex;
