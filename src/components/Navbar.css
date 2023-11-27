@@ -1,0 +1,158 @@
+.Navbar__Body {
+  width: 100%;
+  font-size: 18px;
+  padding-left: 24px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.DarkMode__Toggle {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+  margin-right: 25px;
+}
+
+.DarkMode__Toggle svg {
+  font-size: 24px;
+}
+
+.day-mode .DarkMode__Toggle {
+  color: #333;
+}
+
+.dark-mode .DarkMode__Toggle {
+  color: #fff;
+}
+
+.Navbar__TopRightLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Navbar__TopRightLabel h6 {
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+
+
+.Display__Button {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--white);
+  border: solid 1px var(--dark2);
+  box-shadow: 0px 1px 4px color-mix(in oklch, var(--dark2), transparent 50%);
+  border-radius: 6px;
+  gap: 12px;
+  font-size: 18px;
+  position: relative;
+  margin-left: 40px; /* Adjusted the margin for the display button */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 445px) {
+  .Navbar__TopRightLabel {
+    display: none;
+  }
+
+  .Display__Button {
+    margin-left: 6px; /* Adjusted the margin for smaller screens */
+  }
+
+  .DarkMode__Toggle {
+    left: auto; /* Removed the left property */
+    right: 10px; /* Adjusted the right property for smaller screens */
+    margin-left: 0; /* Removed the margin for smaller screens */
+  }
+}
+
+
+.Display__Button > h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h5 {
+  margin: 0;
+}
+
+.Display__Content {
+  position: absolute;
+  transform: translate(0, 12px);
+  border: solid 1px var(--dark2);
+  background: var(--white);
+  box-shadow: 0px 2px 4px color-mix(in oklch, var(--dark2), transparent 20%);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.Display__Items {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.Display__Items > h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark3);
+  width: 100px;
+}
+
+.SelectGroupBy,
+.SelectOrderBy {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  border: solid 1px var(--dark2);
+  border-radius: 6px;
+  font-size: 16px;
+  position: relative;
+}
+
+.day-mode .Navbar__Body {
+  background-color: var(--navbar-bg);
+}
+
+.dark-mode .Navbar__Body {
+  background-color: #282828;
+}
+
+.DarkMode__Toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--dark3);
+  margin-right: 16px;
+}
+
+.day-mode .DarkMode__Toggle {
+  color: var(--dark3);
+}
+
+.dark-mode .DarkMode__Toggle {
+  color: #fff;
+}
+
+.DarkMode__Toggle svg {
+  font-size: 24px;
+}

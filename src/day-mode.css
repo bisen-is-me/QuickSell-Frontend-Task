@@ -1,0 +1,37 @@
+:root {
+  --background: #e8e8e8;
+  --text: #495464;
+  --card-bg: #f4f4f2;
+  --card-border: var(--dark2);
+  --navbar-bg: var(--white);
+  --navbar-shadow: 0px 2px 4px color-mix(in oklch, var(--dark2), transparent 50%);
+}
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.Dashboard__Wrapper {
+  transition: background-color 0.3s ease;
+  max-width: 100%;
+  max-height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+.Dashboard__Content {
+  background-color: var(--card-bg);
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+.Navbar__Backdrop {
+  background-color: var(--navbar-bg);
+  box-shadow: var(--navbar-shadow);
+}
+
+.Navbar__Body.light-mode {
+  background-color: var(--navbar-bg);
+}

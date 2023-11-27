@@ -1,0 +1,44 @@
+:root {
+  --white: #f4f4f2;
+  --dark1: #e8e8e8;
+  --dark2: #bbbfca;
+  --dark3: #495464;
+  --black: #000000;
+}
+
+html,
+body {
+  background-color: var(--dark1);
+  z-index: -10;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.Dashboard__Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:max-content;
+  margin: 0;
+  padding: 0;
+}
+
+.Dashboard__Content {
+  width: 100%;
+  max-width: 100%;
+  min-height:100vh; 
+
+}
+.Dashboard__Content:last-child {
+  margin-bottom: 20px; 
+}
+.Navbar__Backdrop {
+  width: 100%;
+  font-size: 18px;
+  height: 96px;
+  background-color: var(--white);
+  border-bottom: solid 1px var(--dark2);
+  box-shadow: 0px 2px 4px color-mix(in oklch, var(--dark2), transparent 50%);
+  position: absolute;
+}

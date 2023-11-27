@@ -1,0 +1,64 @@
+.Main__Body__Content {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0 24px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+
+.Verticle__Columns {
+  flex: 1;
+  min-height: 250px;
+}
+
+.Verticle__Columns > .Verticle__Column__Header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Verticle__Columns > .Verticle__Column__Header > .Header__Left,
+.Header__Right {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 0.5rem;
+}
+
+.Verticle__Columns > .Column__Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.day-mode .Dashboard__Wrapper {
+  transition: background-color 0.3s ease;
+  background-color: var(--background);
+}
+
+.dark-mode .Dashboard__Wrapper {
+  transition: background-color 0.3s ease;
+  background-color: #1a1a1a;
+}
+
+.day-mode .Dashboard__Content {
+  background-color: var(--card-bg);
+}
+
+.dark-mode .Dashboard__Content {
+  background-color: #1a1a1a;
+}
+
+.day-mode .FullHeightContent,
+.dark-mode .FullHeightContent {
+  
+  overflow-y: auto;
+}
+
