@@ -34,7 +34,7 @@ Users should are able to sort the displayed tickets in two ways:
 0 - No priority
 
 STEPS TO RUN THIS IN YOUR SYSTEM:
-1. CLONE THE GITHUB REPO:
+1. CLONE THE GITHUB REPO: https://github.com/bisen-is-me/QuickSell-Frontend-Task
 2. INSTALL THE NODE MODULES: npm install
 3. START THE SERVER: npm run dev / npm start
 
