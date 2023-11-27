@@ -39,5 +39,4 @@ STEPS TO RUN THIS IN YOUR SYSTEM:
 3. START THE SERVER: npm run dev / npm start
 
 TECH STACK:
-React JS
-CSS
+React JS, CSS
